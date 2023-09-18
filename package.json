@@ -1,0 +1,9 @@
+{
+  "main": "src/index.js",
+  "type": "module",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.44",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
