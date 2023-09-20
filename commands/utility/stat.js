@@ -81,9 +81,9 @@ const executeFunction = async (interaction) => {
 
     for (let i = 0; i < arg1; i++) {
         const SKILLBAR_WIDTH = (constants.CANVAS_WIDTH - (constants.CANVAS_MARGINS*2))
-        const SKILLBAR_HEIGHT = (constants.CANVAS_HEIGHT / arg1) / 1.08 
+        const SKILLBAR_HEIGHT = (constants.CANVAS_HEIGHT / 9) - (constants.CANVAS_MARGINS/2)
 
-        const Y = 20 + ((i*SKILLBAR_HEIGHT) + (i*constants.SKILLBAR_GAP))
+        const Y = (i*SKILLBAR_HEIGHT)
 
         makeSkillBar(context, constants.CANVAS_MARGINS, Y, SKILLBAR_WIDTH, SKILLBAR_HEIGHT, {color: constants.SKILLBAR_COLOR})
     }
